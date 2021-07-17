@@ -13,7 +13,6 @@ module.exports = async (fastify, opts) => {
     querySnapshot.forEach((doc) => {
       quotes.push({
         id: doc.id,
-        // actor: doc.data().actor,
         quote: doc.data()[language],
       });
     });
