@@ -53,11 +53,13 @@ module.exports = async function(fastify, opts) {
   fastify.post('/:filmId/quotes', async function(request, reply) { //TODO move to separate route
     const {filmId} = request.params;
     const {actor, quote} = request.body;
+    const {language = 'en'} = request.query;
 
     const document = {
-      en: quote, //TODO support multiple languages
       actor: actor,
     };
+
+    document[language] = quote;
 
     const res = await fastify.firestore.collection('films').
         doc(filmId).
