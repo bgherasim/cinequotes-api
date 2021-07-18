@@ -12,8 +12,5 @@ const options = {
 };
 
 module.exports = fp(async (fastify, opts) => {
-
-  const client = new pubsub.PubSub(options);
-
-  fastify.decorate('pubsub', client);
+  fastify.decorate('pubsub', new pubsub.PubSub(options));
 });
