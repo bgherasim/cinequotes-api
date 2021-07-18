@@ -5,7 +5,13 @@
 
 const Fastify = require('fastify');
 const fp = require('fastify-plugin');
+
 const App = require('../app');
+
+const firestore = require('../store/firestore');
+const seed = require('../helpers/seedFirestore');
+const clear = require('../helpers/clearFirestore');
+const testData = require('./testData.json');
 
 // Fill in this config with all the configurations
 // needed for testing the application
@@ -28,7 +34,13 @@ function build(t) {
   return app;
 }
 
+async function seedDb() {
+  await clear();
+  await seed(firestore, testData);
+}
+
 module.exports = {
   config,
   build,
+  seedDb,
 };

@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "Fov91vkrqxuEkeAclWCt",
+    "title": "Scarface",
+    "quotes": [
+      {
+        "actor": "Al Pacino",
+        "en": "Say hello to my little friend.",
+        "fr": "Dis bonjour à mon petit ami."
+      }
+    ]
+  },
+  {
+    "_id": "akeuXlEZfPTIxpJR1CTo",
+    "title": "The Wizard of Oz",
+    "quotes": [
+      {
+        "actor": "Judy Garland",
+        "en": "Toto, I've got a feeling we're not in Kansas anymore.",
+        "fr": "Toto, j'ai le sentiment que nous ne sommes plus au Kansas."
+      }
+    ]
+  },
+  {
+    "_id": "34pcHTCDXciZEI2pju9M",
+    "title": "Star Wars",
+    "quotes": [
+      {
+        "actor": "Harrison Ford",
+        "en": "May the force be with you.",
+        "fr": "Que la force soit avec toi."
+      }
+    ]
+  },
+  {
+    "_id": "Udk6PrxKH642ZA8hjQXa",
+    "title": "Taxi Driver",
+    "quotes": [
+      {
+        "actor": "Robert DeNiro",
+        "en": "You talking to me?",
+        "fr": "Tu me parle?"
+      }
+    ]
+  },
+  {
+    "_id": "13XrZckmCzSHQSqgSjWb",
+    "title": "Jerry Maguire",
+    "quotes": [
+      {
+        "actor": "Renee Zelwegger",
+        "en": "You had me at hello.",
+        "fr": "Vous me avez eu à bonjour."
+      }
+    ]
+  }
+]

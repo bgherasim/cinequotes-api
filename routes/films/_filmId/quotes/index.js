@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = async (fastify, opts) => {
   fastify.get('/', async function(request, reply) {
@@ -47,4 +47,4 @@ module.exports = async (fastify, opts) => {
       id: res.id,
     };
   });
-}
+};

@@ -1,14 +1,16 @@
 'use strict';
 
 const {test} = require('tap');
-const {build} = require('../../helper');
+const {build, seedDb} = require('../../helper');
 
 test('### GET /films', async (t) => {
   const app = build(t);
+  await seedDb();
 
   const res = await app.inject({
     url: '/films',
   });
-  t.ok(JSON.parse(res.payload).length);
-  // t.same(JSON.parse(res.payload), {root: true});
+  const data = JSON.parse(res.payload);
+  t.equal(data.length, 5);
+  t.same(data[0], {'id': '13XrZckmCzSHQSqgSjWb', 'title': 'Jerry Maguire'});
 });
